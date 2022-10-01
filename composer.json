@@ -1,0 +1,32 @@
+{
+  "name": "magicdb/magicdb",
+  "description": "Here just bounch of method that will make your life easyer.",
+  "keywords": ["laravel","database","db","query","sql","relation"],
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "MD Israfil Hossain",
+      "email": "webfil303@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Magicdb\\Magicdb\\": "src/"
+    },
+    "files": [
+      "src/helper/magicdb.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+        "providers": [
+            "Magicdb\\Magicdb\\MagicdbServiceProvider"
+        ]
+    }
+  }
+}
